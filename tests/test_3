@@ -1,0 +1,39 @@
+/ FOV
+90.0
+/ Camera position
+{0.0, 0.0, -100.0}
+
+/ Objects
+# 1
+/ Spots
+# 1
+
+* cone
+/ Vecteur position
+{5.0, 0.0, -250.0}
+/ Rayon
+1.0
+/ Surface couleur
+{2.0, 2.0, 2.0}
+/ Reflection
+0.0
+/ Transparence
+0.0
+/ Axe
++ y
+
+/ ------------------------------------------------------------ \
+
+* spot
+/ Vecteur position
+{0.0, 10.0, 0.0}
+/ Rayon
+3.0
+/ Surface couleur
+{0.0, 0.0, 0.0}
+/ Reflection
+0.0
+/ Transparence
+0.0
+/ Emission Couleur
+{1.0, 0.0, 0.0}

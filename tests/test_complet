@@ -1,0 +1,101 @@
+/ FOV
+90.0
+/ Camera position
+{0.0, 0.0, 0.0}
+
+/ Objects
+# 5
+/ Spots
+# 2
+
+* sphere
+/ Vecteur position
+{0.0, -10004.0, -20.0}
+/ Rayon
+10000.0
+/ Surface couleur
+{0.5, 0.2, 0.4}
+/ Reflection
+0.0
+/ Transparence
+0.0
+
+* sphere
+/ Vecteur position
+{0.0, 0.0, -20.0}
+/ Rayon
+4.0
+/ Surface couleur
+{1.00, 0.32, 0.36}
+/ Reflection
+1.0
+/ Transparence
+0.5
+
+* sphere
+/ Vecteur position
+{5.0, -1.0, -15.0}
+/ Rayon
+2.0
+/ Surface couleur
+{0.90, 0.76, 0.46}
+/ Reflection
+1.0
+/ Transparence
+0.0
+
+* sphere
+/ Vecteur position
+{5.0, 0.0, -25.0}
+/ Rayon
+3.0
+/ Surface couleur
+{0.65, 0.77, 0.97}
+/ Reflection
+1.0
+/ Transparence
+0.0
+
+* cylinder
+/ Vecteur position
+{-5.5, 0.0, -15.0}
+/ Rayon
+1.0
+/ Surface couleur
+{2.0, 2.0, 2.0}
+/ Reflection
+1.0
+/ Transparence
+1.0
+/ Axe
++ y
+
+/ --------------------------------------------------------------- \
+
+* spot
+/ Vecteur position
+{0.0, 20.0, -30.0}
+/ Rayon
+3.0
+/ Surface couleur
+{1.0, 0.0, 0.0}
+/ Reflection
+0.0
+/ Transparence
+0.0
+/ Emission Couleur
+{1.0, 1.0, 0.0}
+
+* spot
+/ Vecteur position
+{0.0, 20.0, 0.0}
+/ Rayon
+3.0
+/ Surface couleur
+{0.0, 0.0, 0.0}
+/ Reflection
+0.0
+/ Transparence
+0.0
+/ Emission Couleur
+{3.0, 3.0, 3.0}
