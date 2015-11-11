@@ -1,0 +1,59 @@
+{
+cam: 0 0 -5 0 10 0
+}
+
+{
+obj:
+name: plan
+diff: 2
+ref: 0
+color: 0.4 0.3 0.3
+light: 0
+pos: 0 1 0 4.4
+}
+
+
+
+{
+obj:
+name: sphere
+diff: 2
+ref: 0
+color: 0.4 0.4 0.4
+light: 1
+pos: 0 5 5 0.1
+}
+
+{
+obj:
+name: sphere
+diff: 2
+ref: 0
+color: 0.6 0.6 0.8
+light: 1
+pos: 2 5 1 0.1
+}
+
+
+
+{
+obj:
+name: sphere
+diff: 0.2
+ref: 0.6
+color: 0.7 0.7 0.7
+light: 0
+specular: 1
+pos: 1 -0.8 3 2.5
+}
+
+{
+obj:
+name: sphere
+diff: 0.1
+ref: 1
+color: 0.7 0.7 1
+light: 0
+specular: 1
+pos: -5.5 -0.5 7 2
+}

@@ -1,0 +1,99 @@
+{
+cam: 0 0 -5 0 10 0
+}
+
+{
+obj:
+name: plan
+diff: 2
+ref: 0
+color: 0.4 0.3 0.3
+light: 0
+pos: 0 1 0 4.4
+refraction: 0 0
+}
+
+
+
+{
+obj:
+name: sphere
+diff: 0
+ref: 0
+color: 0.4 0.4 0.4
+light: 1
+pos: 0 5 5 0.1
+refraction: 0 0
+}
+
+{
+obj:
+name: sphere
+diff: 0
+ref: 0.2
+color: 0.6 0.6 0.8
+light: 1
+pos: -3 5 1 0.1
+refraction: 0 0
+}
+
+
+
+{
+obj:
+name: sphere
+diff: 0.2
+ref: 0.2
+color: 0.7 0.7 1
+light: 0
+pos: 1 0.8 3 2.5
+specular: 1
+refraction: 1 1
+}
+
+
+
+{
+obj:
+name: sphere
+diff: 0.6
+ref: 0
+color: 0.3 1.0 4
+light: 0
+pos: 1 1 10 0.3
+refraction: 0 0
+}
+
+{
+obj:
+name: sphere
+diff: 0.6
+ref: 0
+color: 0.3 1.0 4
+light: 0
+pos: 1 -1 10 0.3
+refraction: 0 0
+}
+
+
+{
+obj:
+name: plan
+diff: 0.6
+ref: 0
+color: 0.5 0.4 0.5
+light: 0
+pos: 0.4 0 -1 12
+refraction: 0 0
+}
+
+{
+obj:
+name: plan
+diff: 1
+ref: 0
+color: 0.4 0.7 0.7
+light: 0
+pos: 0 -1 0 7.4
+refraction: 0 0
+}
