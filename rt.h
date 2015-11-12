@@ -100,6 +100,58 @@ typedef struct  s_raytracer
     int         in;
 }               t_raytracer;
 
+typedef struct  s_rayprams
+{
+    t_overview  over;
+    t_vec       dir;
+    t_vec       o;
+    int         depth;
+    int         *distance;
+    double      r_index;
+}               t_rayparams;
+
+typedef struct s_refraction
+{
+    t_vec     t_ref;
+    t_vec     t_ref3;
+    t_vec     col_ref;
+    t_vec     n_ref;
+    double    n_r;
+    double    cosI;
+    double    cosT2;
+    double    t_ref2;
+}             t_refraction;
+
+typedef struct  s_specular
+{
+  t_vec         v_spec;
+  t_vec         r_spec;
+  t_vec         ret_spec;
+  double        r_spect;
+  double        dot_spec;
+  double        spect_diff;
+}               t_specular;
+
+int return_i(t_obj *tmp, t_vec dir, t_vec o);
+t_vec   set_nvec(t_obj *ret, t_vec dir, t_vec o, double ret2);
+t_vec set_vec(double x, double y, double z);
+t_vec   init_vec(void);
+t_raytracer    *init_ray(t_obj *l);
+
+void      refraction(t_raytracer *ray, t_rayparams *params);
+void    reflexion(t_raytracer *ray, t_rayparams *params);
+t_vec     depth_inf_maxdepth(t_raytracer *ray, t_rayparams *params, double refl);
+
+void			tmp_type_sphere(t_raytracer *ray, t_obj *l);
+void			first_loop(t_raytracer *ray, t_vec dir, t_vec o);
+t_vec			dot_positif(t_raytracer *ray);
+
+double hit_sphere(t_vec dir, t_vec o, t_obj *obj);
+double hit_plane(t_vec dir, t_vec o, t_obj *obj);
+double hit_cyl(t_vec dir, t_vec o, t_obj *obj);
+int		ft_intercone(t_vec rayorg, t_vec raydir, t_obj *obj);
+t_vec   raytracer(t_rayparams *params);
+
 t_overview ft_parser(char *path);
 double ft_atof(char *str);
 void fill_name(char *s, t_obj *o);

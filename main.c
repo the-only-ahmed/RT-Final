@@ -312,6 +312,16 @@ t_vec                  rt_rayvec(int x, int y)
         return (vec);
 }
 
+void setparams(t_rayparams *params, t_overview over, t_vec dir, t_vec o, int *d)
+{
+  params->over = over;
+  params->dir = dir;
+  params->o = o;
+  params->depth = 1;
+  params->r_index = 1.0f;
+  params->distance = d;
+}
+
 void render(t_data *data, t_overview over)
 {
   double m_WX1 = -4, m_WX2 = 4, m_WY1 = 3, m_WY2 = -3;
@@ -332,6 +342,9 @@ void render(t_data *data, t_overview over)
   int g;
   int b;
   t_vec col;
+
+  t_rayparams *params = (t_rayparams*)malloc(sizeof(t_rayparams));
+
   while (y < IMG_W)
   {
     m_SX = m_WX1;
@@ -343,7 +356,8 @@ void render(t_data *data, t_overview over)
       dir.w = 0;
       dir = sub_vec(dir, o);
       dir = norm(dir);
-      col = raytracer(over, dir, o, 1, 1.0f, &d);
+      setparams(params, over, dir, o, &d);
+      col = raytracer(params);
       r = (int)(col.x * 256);
       g = (int)(col.y * 256);
       b = (int)(col.w * 256);
