@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/12 18:19:01 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/12 18:44:35 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/13 19:19:04 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,12 @@ void	refraction(t_raytracer *ray, t_rayparams *params)
 		ref.n_r = params->r_index / ray->ret->index_refraction;
 		ref.n_ref = sub_vec(ray->pi, ray->ret->pos);
 		ref.n_ref = mul_vec(ref.n_ref, 1.0f / ray->ret->radius);
-		ref.cosI = -DOT(ref.n_ref, params->dir);
-		ref.cosT2 = 1.0f - ref.n_r * ref.n_r * (1.0f - ref.cosI * ref.cosI);
-		if (ref.cosT2 > 0.0f)
+		ref.cos_i = -DOT(ref.n_ref, params->dir);
+		ref.cos_t2 = 1.0f - ref.n_r * ref.n_r * (1.0f - ref.cos_i * ref.cos_i);
+		if (ref.cos_t2 > 0.0f)
 		{
 			ref.t_ref = mul_vec(params->dir, ref.n_r);
-			ref.t_ref2 = ref.n_r * ref.cosI - sqrtf(ref.cosT2);
+			ref.t_ref2 = ref.n_r * ref.cos_i - sqrtf(ref.cos_t2);
 			ref.n_ref = mul_vec(ref.n_ref, ref.t_ref2);
 			ref.t_ref = add_vec(ref.t_ref, ref.n_ref);
 			ref.t_ref3 = mul_vec(ref.t_ref, EPSILON);

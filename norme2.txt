@@ -1,0 +1,588 @@
+Norme: ./fill.c
+Error: 9 functions in the file
+Norme: ./ft_atof.c
+Norme: ./list_obj.c
+Norme: ./main.c
+Error: 42 header not at top of the file
+Error: global scope bad aligned
+Error: 19 functions in the file
+Error (line 2): C++ comment
+Error (line 4): Space before function name
+Error (line 6): bad indentation
+Error (line 6): must begin only by tabulations
+Error (line 7): bad indentation
+Error (line 7): must begin only by tabulations
+Error (line 8): bad indentation
+Error (line 8): must begin only by tabulations
+Error (line 9): bad indentation
+Error (line 9): must begin only by tabulations
+Error (line 10): bad indentation
+Error (line 10): must begin only by tabulations
+Error (line 11): bad indentation
+Error (line 11): must begin only by tabulations
+Error (line 12): bad indentation
+Error (line 12): must begin only by tabulations
+Error (line 13): bad indentation
+Error (line 13): must begin only by tabulations
+Error (line 16): Space before function name
+Error (line 18): bad indentation
+Error (line 18): must begin only by tabulations
+Error (line 19): bad indentation
+Error (line 19): must begin only by tabulations
+Error (line 20): bad indentation
+Error (line 20): must begin only by tabulations
+Error (line 21): bad indentation
+Error (line 21): must begin only by tabulations
+Error (line 22): bad indentation
+Error (line 22): must begin only by tabulations
+Error (line 23): bad indentation
+Error (line 23): must begin only by tabulations
+Error (line 41, col 2): Spacing after call to mlx_get_data_addr
+Error (line 45): declarations must be followed by one empty line in hit_sphere
+Error (line 45): declarations in hit_sphere are bad aligned
+Error (line 45): Space before function name
+Error (line 45): function hit_sphere has 29 lines
+Error (line 47): bad indentation
+Error (line 47): must begin only by tabulations
+Error (line 48): bad indentation
+Error (line 48): must begin only by tabulations
+Error (line 49): bad indentation
+Error (line 49): must begin only by tabulations
+Error (line 50): bad indentation
+Error (line 50): must begin only by tabulations
+Error (line 51): bad indentation
+Error (line 51): must begin only by tabulations
+Error (line 51): C++ comment
+Error (line 52): bad indentation
+Error (line 52): must begin only by tabulations
+Error (line 52, col 53): missing space around *
+Error (line 60): bad indentation
+Error (line 60): must begin only by tabulations
+Error (line 61): bad indentation
+Error (line 61): must begin only by tabulations
+Error (line 62): bad indentation
+Error (line 62): must begin only by tabulations
+Error (line 62, col 11): missing parentheses in return statement
+Error (line 63): bad indentation
+Error (line 63): must begin only by tabulations
+Error (line 64): bad indentation
+Error (line 64): must begin only by tabulations
+Error (line 65): bad indentation
+Error (line 65): must begin only by tabulations
+Error (line 66): bad indentation
+Error (line 66): must begin only by tabulations
+Error (line 67): bad indentation
+Error (line 67): must begin only by tabulations
+Error (line 68): bad indentation
+Error (line 68): must begin only by tabulations
+Error (line 68, col 13): missing parentheses in return statement
+Error (line 69): bad indentation
+Error (line 69): must begin only by tabulations
+Error (line 70): bad indentation
+Error (line 70): must begin only by tabulations
+Error (line 70): line has 97 characters
+Error (line 70): C++ comment
+Error (line 71): bad indentation
+Error (line 71): must begin only by tabulations
+Error (line 72): bad indentation
+Error (line 72): must begin only by tabulations
+Error (line 73): bad indentation
+Error (line 73): must begin only by tabulations
+Error (line 74): bad indentation
+Error (line 74): must begin only by tabulations
+Error (line 74, col 11): missing parentheses in return statement
+Error (line 75): bad indentation
+Error (line 75): must begin only by tabulations
+Error (line 75, col 9): missing parentheses in return statement
+Error (line 78): declarations in hit_plane must be at the top of the function
+Error (line 78): declarations must be followed by one empty line in hit_plane
+Error (line 78): Space before function name
+Error (line 80): bad indentation
+Error (line 80): must begin only by tabulations
+Error (line 80, col 9): d is instanciated during declaration
+Error (line 81): bad indentation
+Error (line 81): must begin only by tabulations
+Error (line 82): bad indentation
+Error (line 82): must begin only by tabulations
+Error (line 83): bad indentation
+Error (line 83): must begin only by tabulations
+Error (line 83, col 11): dist is instanciated during declaration
+Error (line 84): bad indentation
+Error (line 84): must begin only by tabulations
+Error (line 85): bad indentation
+Error (line 85): must begin only by tabulations
+Error (line 86): bad indentation
+Error (line 86): must begin only by tabulations
+Error (line 86, col 13): missing parentheses in return statement
+Error (line 87): bad indentation
+Error (line 87): must begin only by tabulations
+Error (line 88): bad indentation
+Error (line 88): must begin only by tabulations
+Error (line 89): bad indentation
+Error (line 89): must begin only by tabulations
+Error (line 89, col 9): missing parentheses in return statement
+Error (line 92): declarations in hit_cylx are bad aligned
+Error (line 92): Space before function name
+Error (line 92): function hit_cylx has 27 lines
+Error (line 92, col 0): hit_cylx has 7 variables
+Error (line 94): bad indentation
+Error (line 94): must begin only by tabulations
+Error (line 95): bad indentation
+Error (line 96): bad indentation
+Error (line 97): bad indentation
+Error (line 98): bad indentation
+Error (line 99): bad indentation
+Error (line 100): bad indentation
+Error (line 102): bad indentation
+Error (line 103): bad indentation
+Error (line 104): bad indentation
+Error (line 106): bad indentation
+Error (line 107): bad indentation
+Error (line 108): bad indentation
+Error (line 109): bad indentation
+Error (line 109): must begin only by tabulations
+Error (line 110): bad indentation
+Error (line 110): must begin only by tabulations
+Error (line 111): bad indentation
+Error (line 111): must begin only by tabulations
+Error (line 112): bad indentation
+Error (line 112): must begin only by tabulations
+Error (line 113): bad indentation
+Error (line 113): must begin only by tabulations
+Error (line 114): bad indentation
+Error (line 114): must begin only by tabulations
+Error (line 115): bad indentation
+Error (line 115): must begin only by tabulations
+Error (line 116): bad indentation
+Error (line 116): must begin only by tabulations
+Error (line 117): bad indentation
+Error (line 118): bad indentation
+Error (line 119): bad indentation
+Error (line 119): must begin only by tabulations
+Error (line 120): bad indentation
+Error (line 123): declarations in hit_cylw are bad aligned
+Error (line 123): Space before function name
+Error (line 123): function hit_cylw has 27 lines
+Error (line 123, col 0): hit_cylw has 7 variables
+Error (line 125): bad indentation
+Error (line 125): must begin only by tabulations
+Error (line 129): bad indentation
+Error (line 129): must begin only by tabulations
+Error (line 130): bad indentation
+Error (line 130): must begin only by tabulations
+Error (line 131): bad indentation
+Error (line 131): must begin only by tabulations
+Error (line 140): bad indentation
+Error (line 140): must begin only by tabulations
+Error (line 141): bad indentation
+Error (line 141): must begin only by tabulations
+Error (line 142): bad indentation
+Error (line 142): must begin only by tabulations
+Error (line 143): bad indentation
+Error (line 143): must begin only by tabulations
+Error (line 144): bad indentation
+Error (line 144): must begin only by tabulations
+Error (line 145): bad indentation
+Error (line 145): must begin only by tabulations
+Error (line 146): bad indentation
+Error (line 146): must begin only by tabulations
+Error (line 147): bad indentation
+Error (line 147): must begin only by tabulations
+Error (line 149): bad indentation
+Error (line 149): must begin only by tabulations
+Error (line 150): bad indentation
+Error (line 150): must begin only by tabulations
+Error (line 151): bad indentation
+Error (line 151): must begin only by tabulations
+Error (line 154): declarations in hit_cyly are bad aligned
+Error (line 154): Space before function name
+Error (line 154): function hit_cyly has 27 lines
+Error (line 154, col 0): hit_cyly has 7 variables
+Error (line 156): bad indentation
+Error (line 156): must begin only by tabulations
+Error (line 160): bad indentation
+Error (line 160): must begin only by tabulations
+Error (line 161): bad indentation
+Error (line 161): must begin only by tabulations
+Error (line 162): bad indentation
+Error (line 162): must begin only by tabulations
+Error (line 171): bad indentation
+Error (line 171): must begin only by tabulations
+Error (line 172): bad indentation
+Error (line 172): must begin only by tabulations
+Error (line 173): bad indentation
+Error (line 173): must begin only by tabulations
+Error (line 174): bad indentation
+Error (line 174): must begin only by tabulations
+Error (line 175): bad indentation
+Error (line 175): must begin only by tabulations
+Error (line 176): bad indentation
+Error (line 176): must begin only by tabulations
+Error (line 177): bad indentation
+Error (line 177): must begin only by tabulations
+Error (line 178): bad indentation
+Error (line 178): must begin only by tabulations
+Error (line 180): bad indentation
+Error (line 180): must begin only by tabulations
+Error (line 181): bad indentation
+Error (line 181): must begin only by tabulations
+Error (line 182): bad indentation
+Error (line 182): must begin only by tabulations
+Error (line 185): Space before function name
+Error (line 187): bad indentation
+Error (line 187): must begin only by tabulations
+Error (line 188): bad indentation
+Error (line 188): must begin only by tabulations
+Error (line 188, col 11): missing parentheses in return statement
+Error (line 189): bad indentation
+Error (line 189): must begin only by tabulations
+Error (line 190): bad indentation
+Error (line 190): must begin only by tabulations
+Error (line 190, col 11): missing parentheses in return statement
+Error (line 191): bad indentation
+Error (line 191): must begin only by tabulations
+Error (line 192): bad indentation
+Error (line 192): must begin only by tabulations
+Error (line 192, col 11): missing parentheses in return statement
+Error (line 193): bad indentation
+Error (line 193): must begin only by tabulations
+Error (line 193, col 9): missing parentheses in return statement
+Error (line 196): declarations in ft_interconex are bad aligned
+Error (line 196): function ft_interconex has 28 lines
+Error (line 196, col 0): ft_interconex has 7 variables
+Error (line 198): bad indentation
+Error (line 198): must begin only by tabulations
+Error (line 202): bad indentation
+Error (line 202): must begin only by tabulations
+Error (line 203): bad indentation
+Error (line 203): must begin only by tabulations
+Error (line 204): bad indentation
+Error (line 204): must begin only by tabulations
+Error (line 216): bad indentation
+Error (line 216): must begin only by tabulations
+Error (line 217): bad indentation
+Error (line 217): must begin only by tabulations
+Error (line 218): bad indentation
+Error (line 218): must begin only by tabulations
+Error (line 219): bad indentation
+Error (line 219): must begin only by tabulations
+Error (line 220): bad indentation
+Error (line 220): must begin only by tabulations
+Error (line 221): bad indentation
+Error (line 221): must begin only by tabulations
+Error (line 223): bad indentation
+Error (line 223): must begin only by tabulations
+Error (line 224): bad indentation
+Error (line 224): must begin only by tabulations
+Error (line 225): bad indentation
+Error (line 225): must begin only by tabulations
+Error (line 228): declarations in ft_interconey are bad aligned
+Error (line 228): function ft_interconey has 28 lines
+Error (line 228, col 0): ft_interconey has 7 variables
+Error (line 230): bad indentation
+Error (line 230): must begin only by tabulations
+Error (line 234): bad indentation
+Error (line 234): must begin only by tabulations
+Error (line 235): bad indentation
+Error (line 235): must begin only by tabulations
+Error (line 236): bad indentation
+Error (line 236): must begin only by tabulations
+Error (line 248): bad indentation
+Error (line 248): must begin only by tabulations
+Error (line 249): bad indentation
+Error (line 249): must begin only by tabulations
+Error (line 250): bad indentation
+Error (line 250): must begin only by tabulations
+Error (line 251): bad indentation
+Error (line 251): must begin only by tabulations
+Error (line 252): bad indentation
+Error (line 252): must begin only by tabulations
+Error (line 253): bad indentation
+Error (line 253): must begin only by tabulations
+Error (line 255): bad indentation
+Error (line 255): must begin only by tabulations
+Error (line 256): bad indentation
+Error (line 256): must begin only by tabulations
+Error (line 257): bad indentation
+Error (line 257): must begin only by tabulations
+Error (line 260): declarations in ft_interconew are bad aligned
+Error (line 260): function ft_interconew has 28 lines
+Error (line 260, col 0): ft_interconew has 7 variables
+Error (line 266): bad indentation
+Error (line 266): must begin only by tabulations
+Error (line 267): bad indentation
+Error (line 267): must begin only by tabulations
+Error (line 268): bad indentation
+Error (line 268): must begin only by tabulations
+Error (line 280): bad indentation
+Error (line 280): must begin only by tabulations
+Error (line 281): bad indentation
+Error (line 281): must begin only by tabulations
+Error (line 282): bad indentation
+Error (line 282): must begin only by tabulations
+Error (line 283): bad indentation
+Error (line 283): must begin only by tabulations
+Error (line 284): bad indentation
+Error (line 284): must begin only by tabulations
+Error (line 285): bad indentation
+Error (line 285): must begin only by tabulations
+Error (line 287): bad indentation
+Error (line 287): must begin only by tabulations
+Error (line 288): bad indentation
+Error (line 288): must begin only by tabulations
+Error (line 289): bad indentation
+Error (line 289): must begin only by tabulations
+Error (line 303): declarations in rt_rayvec are bad aligned
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303): Space before function name
+Error (line 303, col 5): bad spacing
+Error (line 305): bad indentation
+Error (line 305): must begin only by tabulations
+Error (line 305, col 13): bad spacing
+Error (line 306): bad indentation
+Error (line 306): must begin only by tabulations
+Error (line 306, col 14): bad spacing
+Error (line 308): bad indentation
+Error (line 308): must begin only by tabulations
+Error (line 309): bad indentation
+Error (line 309): must begin only by tabulations
+Error (line 310): bad indentation
+Error (line 310): must begin only by tabulations
+Error (line 311): bad indentation
+Error (line 311): must begin only by tabulations
+Error (line 312): bad indentation
+Error (line 312): must begin only by tabulations
+Error (line 315): setparams have 5 parameters
+Error (line 315): Space before function name
+Error (line 317): bad indentation
+Error (line 317): must begin only by tabulations
+Error (line 318): bad indentation
+Error (line 318): must begin only by tabulations
+Error (line 319): bad indentation
+Error (line 319): must begin only by tabulations
+Error (line 320): bad indentation
+Error (line 320): must begin only by tabulations
+Error (line 321): bad indentation
+Error (line 321): must begin only by tabulations
+Error (line 322): bad indentation
+Error (line 322): must begin only by tabulations
+Error (line 325): declarations in render must be at the top of the function
+Error (line 325): declarations in render are bad aligned
+Error (line 325): Space before function name
+Error (line 325): function render has 49 lines
+Error (line 325, col 0): render has 19 variables
+Error (line 327): bad indentation
+Error (line 327): multiple declarations
+Error (line 327): must begin only by tabulations
+Error (line 327, col 9): m_WX1 not unixcase
+Error (line 327, col 9): m_WX1 is instanciated during declaration
+Error (line 327, col 21): m_WX2 not unixcase
+Error (line 327, col 21): m_WX2 is instanciated during declaration
+Error (line 327, col 32): m_WY1 not unixcase
+Error (line 327, col 32): m_WY1 is instanciated during declaration
+Error (line 327, col 43): m_WY2 not unixcase
+Error (line 327, col 43): m_WY2 is instanciated during declaration
+Error (line 328): bad indentation
+Error (line 328): must begin only by tabulations
+Error (line 328, col 9): m_SY not unixcase
+Error (line 328, col 9): m_SY is instanciated during declaration
+Error (line 329): bad indentation
+Error (line 329): must begin only by tabulations
+Error (line 329, col 9): m_DX not unixcase
+Error (line 329, col 9): m_DX is instanciated during declaration
+Error (line 330): bad indentation
+Error (line 330): must begin only by tabulations
+Error (line 330, col 9): m_DY not unixcase
+Error (line 330, col 9): m_DY is instanciated during declaration
+Error (line 331): bad indentation
+Error (line 331): must begin only by tabulations
+Error (line 331, col 9): m_SX not unixcase
+Error (line 332): bad indentation
+Error (line 332): must begin only by tabulations
+Error (line 333): bad indentation
+Error (line 333): must begin only by tabulations
+Error (line 334): bad indentation
+Error (line 334): must begin only by tabulations
+Error (line 334, col 6): x is instanciated during declaration
+Error (line 335): bad indentation
+Error (line 335): must begin only by tabulations
+Error (line 335, col 6): y is instanciated during declaration
+Error (line 336): bad indentation
+Error (line 336): must begin only by tabulations
+Error (line 337): bad indentation
+Error (line 337): must begin only by tabulations
+Error (line 338): bad indentation
+Error (line 338): must begin only by tabulations
+Error (line 339): bad indentation
+Error (line 339): must begin only by tabulations
+Error (line 340): bad indentation
+Error (line 340): must begin only by tabulations
+Error (line 341): bad indentation
+Error (line 341): must begin only by tabulations
+Error (line 342): bad indentation
+Error (line 342): must begin only by tabulations
+Error (line 343): bad indentation
+Error (line 343): must begin only by tabulations
+Error (line 344): bad indentation
+Error (line 344): must begin only by tabulations
+Error (line 346): bad indentation
+Error (line 346): must begin only by tabulations
+Error (line 346, col 15): params is instanciated during declaration
+Error (line 348): bad indentation
+Error (line 348): must begin only by tabulations
+Error (line 349): bad indentation
+Error (line 349): must begin only by tabulations
+Error (line 350): bad indentation
+Error (line 350): must begin only by tabulations
+Error (line 351): bad indentation
+Error (line 351): must begin only by tabulations
+Error (line 352): bad indentation
+Error (line 352): must begin only by tabulations
+Error (line 353): bad indentation
+Error (line 353): must begin only by tabulations
+Error (line 354): bad indentation
+Error (line 354): must begin only by tabulations
+Error (line 355): bad indentation
+Error (line 355): must begin only by tabulations
+Error (line 356): bad indentation
+Error (line 356): must begin only by tabulations
+Error (line 357): bad indentation
+Error (line 357): must begin only by tabulations
+Error (line 358): bad indentation
+Error (line 358): must begin only by tabulations
+Error (line 359): bad indentation
+Error (line 359): must begin only by tabulations
+Error (line 360): bad indentation
+Error (line 360): must begin only by tabulations
+Error (line 361): bad indentation
+Error (line 361): must begin only by tabulations
+Error (line 362): bad indentation
+Error (line 362): must begin only by tabulations
+Error (line 363): bad indentation
+Error (line 363): must begin only by tabulations
+Error (line 364): 2 instructions
+Error (line 364): bad indentation
+Error (line 364): must begin only by tabulations
+Error (line 364): missing newline after if
+Error (line 365): 2 instructions
+Error (line 365): bad indentation
+Error (line 365): must begin only by tabulations
+Error (line 365): missing newline after if
+Error (line 366): 2 instructions
+Error (line 366): bad indentation
+Error (line 366): must begin only by tabulations
+Error (line 366): missing newline after if
+Error (line 367): bad indentation
+Error (line 367): must begin only by tabulations
+Error (line 368): bad indentation
+Error (line 368): must begin only by tabulations
+Error (line 369): bad indentation
+Error (line 369): must begin only by tabulations
+Error (line 370): bad indentation
+Error (line 370): must begin only by tabulations
+Error (line 371): bad indentation
+Error (line 371): must begin only by tabulations
+Error (line 372): Empty line
+Error (line 373): bad indentation
+Error (line 373): must begin only by tabulations
+Error (line 374): bad indentation
+Error (line 374): must begin only by tabulations
+Error (line 375): bad indentation
+Error (line 375): must begin only by tabulations
+Error (line 378): declarations must be followed by one empty line in test
+Error (line 378): Space before function name
+Error (line 380): bad indentation
+Error (line 380): must begin only by tabulations
+Error (line 380, col 6): i is instanciated during declaration
+Error (line 381): bad indentation
+Error (line 381): must begin only by tabulations
+Error (line 382): bad indentation
+Error (line 382): must begin only by tabulations
+Error (line 383): bad indentation
+Error (line 383): must begin only by tabulations
+Error (line 384): bad indentation
+Error (line 384): must begin only by tabulations
+Error (line 385): bad indentation
+Error (line 385): must begin only by tabulations
+Error (line 388): declarations must be followed by one empty line in main
+Error (line 388): declarations in main are bad aligned
+Error (line 388): Space before function name
+Error (line 390): bad indentation
+Error (line 390): must begin only by tabulations
+Error (line 391): bad indentation
+Error (line 391): must begin only by tabulations
+Error (line 392): bad indentation
+Error (line 392): must begin only by tabulations
+Error (line 393): bad indentation
+Error (line 393): must begin only by tabulations
+Error (line 394): bad indentation
+Error (line 394): must begin only by tabulations
+Error (line 395): bad indentation
+Error (line 395): must begin only by tabulations
+Error (line 396): bad indentation
+Error (line 396): must begin only by tabulations
+Error (line 397): C++ comment
+Error (line 398): bad indentation
+Error (line 398): must begin only by tabulations
+Error (line 399): bad indentation
+Error (line 399): must begin only by tabulations
+Error (line 400): bad indentation
+Error (line 400): must begin only by tabulations
+Error (line 400, col 9): missing parentheses in return statement
+Norme: ./mlx.c
+Norme: ./mlx.h
+Error: 42 header not at top of the file
+Error: global scope bad aligned
+Error (line 2): spaces at the end of line
+Error (line 3): spaces at the end of line
+Error (line 6): spaces at the end of line
+Error (line 15): multiple empty lines
+Error (line 16): comment not well formatted
+Error (line 42): multiple empty lines
+Error (line 45): wrong number of spaces in preprocessor indentation
+Error (line 45): wrong number of spaces in preprocessor line
+Error (line 47): multiple empty lines
+Error (line 54): multiple empty lines
+Error (line 71): multiple empty lines
+Error (line 76, col 33): bad character after ,
+Error (line 76, col 43): bad character after ,
+Error (line 83): must begin only by tabulations
+Error (line 92): multiple empty lines
+Error (line 104): multiple empty lines
+Error (line 105): comment not well formatted
+Error (line 115): multiple empty lines
+Error (line 121): must begin only by tabulations
+Error (line 123): must begin only by tabulations
+Error (line 125): must begin only by tabulations
+Error (line 136): must begin only by tabulations
+Error (line 142): comment not well formatted
+Norme: ./ray.c
+Norme: ./ray2.c
+Norme: ./ray3.c
+Norme: ./ray4.c
+Error (line 58): function tmp_type_sphere has 30 lines
+Error (line 82): comment not well formatted
+Error (line 82): comment not well placed
+Error (line 87, col 2): no empty line before block
+Norme: ./rt.h
+Warning: /Volumes/Data/nfs/zfs-student-6/users/2013/ael-kadh/Rendu/Semestre_5/RT-Final/rt.h may not compile or is invalid for some reasons.
+Norme: ./vector.c
+Error: 10 functions in the file
+Norme: ./parser.c
+Error (line 25): function fill_obj has 34 lines

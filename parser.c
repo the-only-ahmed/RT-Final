@@ -34,25 +34,7 @@ void		fill_obj(int fd, t_overview *over)
 	while (get_next_line(fd, &str))
 	{
 		trim = ft_strtrim(str);
-		if (!ft_strncmp("name:", trim, 4))
-			fill_name(trim, obj);
-		else if (!ft_strncmp("diff:", trim, 5))
-			fill_diff(trim, obj);
-		else if (!ft_strncmp("ref:", trim, 4))
-			fill_reflection(trim, obj);
-		else if (!ft_strncmp("color:", trim, 6))
-			fill_color(trim, obj);
-		else if (!ft_strncmp("refraction:", trim, 11))
-			fill_refra(trim, obj);
-		else if (!ft_strncmp("specular:", trim, 9))
-			fill_specular(trim, obj);
-		else if (!ft_strncmp("light:", trim, 6))
-			fill_light(trim, obj);
-		else if (!ft_strncmp("pos:", trim, 4))
-			fill_pos(trim, obj);
-		else if (!ft_strncmp("axe:", trim, 4))
-			fill_axe(trim, obj);
-		else if (!ft_strncmp("}", trim, 1))
+		if (object_to_fill(trim, obj) == FALSE)
 			break ;
 	}
 	if (obj->specular)
