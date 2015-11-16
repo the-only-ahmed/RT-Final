@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/13 17:53:19 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/13 19:11:15 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/16 19:00:15 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,14 @@ typedef struct		s_overview
 	t_vec			dir;
 }					t_overview;
 
+typedef struct		s_files
+{
+	char			*name;
+	t_bool			selected;
+	struct s_files	*next;
+	struct s_files	*prev;
+}					t_files;
+
 typedef struct		s_data
 {
 	void			*mlx_ptr;
@@ -55,6 +63,7 @@ typedef struct		s_data
 	int				bpp;
 	int				sl;
 	int				nd;
+	t_files			*file;
 }					t_data;
 
 typedef struct		s_plane

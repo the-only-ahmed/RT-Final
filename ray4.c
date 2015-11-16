@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/12 18:44:59 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/12 18:57:43 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/16 12:48:50 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void			first_loop(t_raytracer *ray, t_vec dir, t_vec o)
 {
 	while (ray->tmp)
 	{
-		ray->i = return_i(ray->tmp, dir, o);
+		return_i(ray, dir, o);
 		if (ray->i > 0)
 		{
 			if (ray->ret)

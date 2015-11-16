@@ -6,17 +6,11 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/13 17:21:06 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/13 18:39:50 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/16 19:08:34 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rt.h"
-
-int			ft_expose_hook(t_data *e)
-{
-	mlx_put_image_to_window(e->mlx_ptr, e->mlx_win, e->img, 0, 0);
-	return (0);
-}
 
 int			init_main(t_data *dat)
 {
@@ -42,28 +36,57 @@ t_vec		rt_rayvec(int x, int y)
 	return (vec);
 }
 
-void		test(t_data *data)
+void		add_file(t_data *e, char *file)
 {
-	int i;
+	t_files *tmp;
+	t_files *ptr;
 
-	i = 0;
-	while (i < IMG_W)
+	tmp = (t_files*)malloc(sizeof(t_files));
+	tmp->name = ft_strdup(file);
+	tmp->next = NULL;
+	tmp->prev = NULL;
+	tmp->selected = FALSE;
+	if (e->file == NULL)
 	{
-		image_pixel_put(data, i, 0, creatergb(156, 88, 88));
-		i++;
+		tmp->selected = TRUE;
+		e->file = tmp;
+	}
+	else
+	{
+		ptr = e->file;
+		while (ptr->next)
+			ptr = ptr->next;
+		tmp->prev = ptr;
+		ptr->next = tmp;
 	}
 }
 
-int			main(int ac, char **av)
+t_bool		get_files(t_data *e)
+{
+	DIR				*dir;
+	struct dirent	*s_dir;
+
+	dir = opendir("./samples");
+	if (dir == NULL)
+		return (FALSE);
+	e->file = NULL;
+	while ((s_dir = readdir(dir)))
+	{
+		if (s_dir->d_name[0] != '.')
+			add_file(e, s_dir->d_name);
+	}
+	return (TRUE);
+}
+
+int			main(void)
 {
 	t_data		data;
-	t_overview	over;
 
-	(void)ac;
 	init_main(&data);
-	over = ft_parser(av[1]);
-	render(&data, over);
-	mlx_expose_hook(data.mlx_win, ft_expose_hook, &data);
+	if (get_files(&data) == FALSE)
+		return (-1);
+	mlx_key_hook(data.mlx_win, ft_key_hook, &data);
+	mlx_expose_hook(data.mlx_win, menu_hook, &data);
 	mlx_loop(data.mlx_ptr);
 	return (0);
 }

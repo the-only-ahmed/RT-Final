@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/12 18:15:16 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/12 18:18:38 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/16 12:51:37 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,17 +41,16 @@ t_vec			set_nvec(t_obj *ret, t_vec dir, t_vec o, double ret2)
 	return (set_vec(o.x + (dir.x * ret2), 0, o.w + (dir.w * ret2)));
 }
 
-int				return_i(t_obj *tmp, t_vec dir, t_vec o)
+void			return_i(t_raytracer *ray, t_vec dir, t_vec o)
 {
-	if (tmp->type == SPHERE)
-		return (hit_sphere(dir, o, tmp));
-	else if (tmp->type == PLAN)
-		return (hit_plane(dir, o, tmp));
-	else if (tmp->type == CYLINDRE)
-		return (hit_cyl(dir, o, tmp));
-	else if (tmp->type == CONE)
-		return (ft_intercone(o, dir, tmp));
-	return (-1);
+	if (ray->tmp->type == SPHERE)
+		ray->i = hit_sphere(dir, o, ray->tmp);
+	else if (ray->tmp->type == PLAN)
+		ray->i = hit_plane(dir, o, ray->tmp);
+	else if (ray->tmp->type == CYLINDRE)
+		ray->i = hit_cyl(dir, o, ray->tmp);
+	else if (ray->tmp->type == CONE)
+		ray->i = ft_intercone(o, dir, ray->tmp);
 }
 
 t_raytracer		*init_ray(t_obj *l)

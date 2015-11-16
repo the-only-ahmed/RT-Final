@@ -6,17 +6,18 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/13 18:57:57 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/13 19:18:11 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/16 19:01:32 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef RT_H
 # define RT_H
 
-# include "libft.h"
 # include <fcntl.h>
-# include "mlx.h"
 # include <math.h>
+# include <dirent.h>
+# include "libft.h"
+# include "mlx.h"
 # include "lists.h"
 
 # define TRUE 1
@@ -37,11 +38,19 @@
 # define CONE 3
 # define EPSILON 0.0001f
 # define MAX_DEPTH 6
+# define UP 126
+# define DOWN 125
+# define ENTER 36
+# define ESC 53
 # define LENGTH(A)		(sqrtf(A.x*A.x+A.y*A.y+A.w*A.w))
 
+int				ft_key_hook(int key_code, t_data *e);
+int				menu_hook(t_data *e);
+void			printselected(t_data *e, t_files *file);
+int				ft_expose_hook(t_data *e);
 void			render(t_data *data, t_overview over);
 t_bool			object_to_fill(char *trim, t_obj *obj);
-int				return_i(t_obj *tmp, t_vec dir, t_vec o);
+void			return_i(t_raytracer *ray, t_vec dir, t_vec o);
 t_vec			set_nvec(t_obj *ret, t_vec dir, t_vec o, double ret2);
 t_vec			set_vec(double x, double y, double z);
 t_vec			init_vec(void);
