@@ -6,7 +6,7 @@
 #    By: jyim <jyim@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/10/29 23:02:01 by jyim              #+#    #+#              #
-#    Updated: 2015/11/19 21:53:57 by ael-kadh         ###   ########.fr        #
+#    Updated: 2015/11/19 21:56:13 by ael-kadh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,19 +30,19 @@ $(NAME): $(OBJ)
 	@gcc $(OBJ) -L libft -lft $(MLX) -o $(NAME)
 
 %.o: %.c
-	@gcc $(FLAGS) -c -I libft/includes $<
+	@gcc $(FLAGS) -c -I libft $<
 
 clean:
-	@rm -f $(OBJ_S)
+	@rm -f $(OBJ)
 	@make -C libft/ clean
 
 fclean: clean
-	@rm -f ../$(NAME_Serv)
+	@rm -f $(NAME)
 	@make -C libft/ fclean
 
 re: fclean all
 
 finish:
-	@(echo "[\033[32m$(NAME_Serv)\033[00m]")
+	@(echo "[\033[32m$(NAME)\033[00m]")
 
 .PHONY: all build clean fclean re

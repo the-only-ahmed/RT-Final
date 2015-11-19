@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/13 18:57:57 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/19 20:53:44 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/19 21:55:20 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <fcntl.h>
 # include <math.h>
 # include <dirent.h>
-# include "libft.h"
+# include <libft.h>
 # include "mlx.h"
 # include "lists.h"
 # include "time.h"

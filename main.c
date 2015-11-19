@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/13 17:21:06 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/19 20:55:40 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/19 21:56:43 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int			init_main(t_data *dat)
 	return (0);
 }
 
-t_vec		rt_rayvec(int x, int y)
+t_vec		rt_rayvec(void)
 {
 	t_vec	vec;
 	double	dist;

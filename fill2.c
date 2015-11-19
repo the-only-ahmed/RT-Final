@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/13 18:50:01 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/13 19:19:21 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/19 21:57:06 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,6 @@ void	fill_light(char *s, t_obj *obj)
 void	fill_axe(char *s, t_obj *obj)
 {
 	char	**tab;
-	int		i;
 
 	tab = ft_strsplit(s, ' ');
 	if (count_tab(tab) < 2)
