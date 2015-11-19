@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/13 18:57:57 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/16 19:01:32 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/19 20:53:44 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include "libft.h"
 # include "mlx.h"
 # include "lists.h"
+# include "time.h"
 
 # define TRUE 1
 # define FALSE 0
@@ -46,7 +47,9 @@
 
 int				ft_key_hook(int key_code, t_data *e);
 int				menu_hook(t_data *e);
-void			printselected(t_data *e, t_files *file);
+int				quality_hook(t_data *e);
+t_files			*set_quality();
+void			printselected(t_data *e, int q);
 int				ft_expose_hook(t_data *e);
 void			render(t_data *data, t_overview over);
 t_bool			object_to_fill(char *trim, t_obj *obj);

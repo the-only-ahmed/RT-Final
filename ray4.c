@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/12 18:44:59 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/16 12:48:50 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/19 20:53:25 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,11 +79,6 @@ void			tmp_type_sphere(t_raytracer *ray, t_obj *l)
 				ray->shade = 0;
 				break ;
 			}
-			/*else if (tmp2->type == CONE && ft_intercone(o1, d1, tmp2) > 0)
-			{
-				shade = 0;
-				break ;
-			}*/
 		}
 		tmp2 = tmp2->next;
 	}

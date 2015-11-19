@@ -6,7 +6,7 @@
 /*   By: ael-kadh <ael-kadh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/13 17:21:06 by ael-kadh          #+#    #+#             */
-/*   Updated: 2015/11/16 19:08:34 by ael-kadh         ###   ########.fr       */
+/*   Updated: 2015/11/19 20:55:40 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int			init_main(t_data *dat)
 		return (-1);
 	dat->img = mlx_new_image(dat->mlx_ptr, IMG_H, IMG_W);
 	dat->str = mlx_get_data_addr(dat->img, &(dat->bpp), &(dat->sl), &(dat->nd));
+	dat->quality = set_quality();
+	dat->pos = 0;
 	return (0);
 }
 

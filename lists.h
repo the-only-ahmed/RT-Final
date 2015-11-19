@@ -49,6 +49,7 @@ typedef struct		s_overview
 typedef struct		s_files
 {
 	char			*name;
+	int				quality;
 	t_bool			selected;
 	struct s_files	*next;
 	struct s_files	*prev;
@@ -60,10 +61,14 @@ typedef struct		s_data
 	void			*mlx_win;
 	void			*img;
 	char			*str;
+	char			*path;
 	int				bpp;
 	int				sl;
 	int				nd;
+	int				pos;
+	int				index_q;
 	t_files			*file;
+	t_files			*quality;
 }					t_data;
 
 typedef struct		s_plane

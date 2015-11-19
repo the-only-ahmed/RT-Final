@@ -22,10 +22,11 @@ static void			setparams(t_rayparams *prms, t_overview over, t_render rdr)
 	prms->distance = &(rdr.d);
 }
 
-static t_render		set_render(t_vec cam)
+static t_render		set_render(t_vec cam, t_data *e)
 {
 	t_render rdr;
 
+	e->pos = 0;
 	rdr.m_wx1 = -4;
 	rdr.m_wx2 = 4;
 	rdr.m_wy1 = 3;
@@ -54,12 +55,12 @@ static t_render		set_render_col(t_render rdr, t_rayparams *params)
 	return (rdr);
 }
 
-void				render(t_data *data, t_overview over)
+void				render(t_data *e, t_overview over)
 {
 	t_render		rdr;
 	t_rayparams		*params;
 
-	rdr = set_render(over.cam);
+	rdr = set_render(over.cam, e);
 	params = (t_rayparams*)malloc(sizeof(t_rayparams));
 	while (rdr.y < IMG_W)
 	{
@@ -74,11 +75,11 @@ void				render(t_data *data, t_overview over)
 			rdr.dir = norm(rdr.dir);
 			setparams(params, over, rdr);
 			rdr = set_render_col(rdr, params);
-			image_pixel_put(data, rdr.x, rdr.y, creatergb(rdr.r, rdr.g, rdr.b));
-			rdr.x++;
-			rdr.m_sx += rdr.m_dx;
+			image_pixel_put(e, rdr.x, rdr.y, creatergb(rdr.r, rdr.g, rdr.b));
+			rdr.x += e->index_q;
+			rdr.m_sx += (rdr.m_dx * e->index_q);
 		}
-		rdr.m_sy += rdr.m_dy;
-		rdr.y++;
+		rdr.m_sy += (rdr.m_dy * e->index_q);
+		rdr.y += e->index_q;
 	}
 }

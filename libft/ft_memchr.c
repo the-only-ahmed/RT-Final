@@ -6,7 +6,7 @@
 /*   By: jyim <jyim@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 22:02:36 by jyim              #+#    #+#             */
-/*   Updated: 2014/05/02 20:00:53 by jyim             ###   ########.fr       */
+/*   Updated: 2015/11/19 21:01:46 by ael-kadh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	dest = (unsigned char *)s;
 	while (n > 0)
 	{
-		if (*dest == (unsigned char) c)
+		if (*dest == (unsigned char)c)
 			return ((void *)dest);
 		n--;
 		dest++;
